@@ -6,7 +6,7 @@ Before you begin creating an application with this `devfile` code sample, it's h
 
 * [.NET60 `devfile.yaml`](https://github.com/redhat-appstudio/devfile-sample-dotnet60-dance/blob/main/devfile.yaml)
 * [.NET60 `Dockerfile`](https://github.com/redhat-appstudio/devfile-sample-dotnet60-dance/blob/main/docker/Dockerfile) 
-
+ 
 1. The `devfile.yaml` file has an [`image-build` component](https://github.com/redhat-appstudio/devfile-sample-dotnet60-dance/blob/main/devfile.yaml#L44-L50) that points to your `Dockerfile`.
 2. The [`docker/Dockerfile`](https://github.com/redhat-appstudio/devfile-sample-dotnet60-dance/blob/main/docker/Dockerfile) contains the instructions you need to build the code sample as a container image.
 3. The `devfile.yaml` [`kubernetes-deploy` component](https://github.com/redhat-appstudio/devfile-sample-dotnet60-dance/blob/main/devfile.yaml#L51-L63) and [`kubernetes-service` component](https://github.com/redhat-appstudio/devfile-sample-dotnet60-dance/blob/main/devfile.yaml#L64-L71) points to a `deployment.yaml` file and `service.yaml`that contains instructions for deploying the built container image.
